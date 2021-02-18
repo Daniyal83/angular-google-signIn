@@ -1,0 +1,42 @@
+.login-wrapper {
+    height: 100%;
+    &_full-width {
+        width: 100%;
+    }
+}
+
+.login-form {
+    min-width: 100%;
+    max-width: 300px;
+    width: 100%;
+    &_full-width {
+        width: 100%;       
+    }
+}
+
+.login-card {
+    padding: 40px 70px 50px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 5;
+    max-width: 330px;
+    &__header {
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-weight: 700;
+    }
+    &__header-title {
+        font-size: 30px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__button {
+        border: 1px solid rgb(68, 68, 90);
+        line-height: 34px;
+        background: rgb(247, 251, 255);
+        width: 48%;
+    }
+}

@@ -1,0 +1,21 @@
+<div class="user-details">
+    <mat-card>
+        <mat-card-title>Details</mat-card-title>
+        <hr>
+        <mat-card-content *ngIf="user$ | async as user">
+            <p *ngIf="user.id">
+                <span class="user-details__label">User id:</span>
+                <span class="user-details__data">{{ user.id }}</span>
+            </p>
+            <p>
+                <span class="user-details__label">Name:</span>
+                <span class="user-details__data">{{ user.firstName }} {{ user.lastName }}</span>
+            </p>
+            <p>
+                <span class="user-details__label">Email:</span>
+                <span class="user-details__data">{{ user.email }}</span>
+            </p>
+        </mat-card-content>
+    </mat-card>
+    <button mat-stroked-button color="accent" class="user-details__button" (click)="signOut()">Sign out</button>
+</div>

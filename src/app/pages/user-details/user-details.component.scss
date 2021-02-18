@@ -1,0 +1,13 @@
+.user-details {
+    padding-top: 100px;
+    &__label {
+        margin-right: 10px;
+    }
+    &__data {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    &__button {
+        margin-top: 20px;
+    }
+}
